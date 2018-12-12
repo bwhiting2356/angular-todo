@@ -1,6 +1,6 @@
 <div class="todo-input-wrapper">
     <input type="text" [(ngModel)]="title" value = {{title}} placeholder="Title"/><br>
     <input type="text" [(ngModel)]="description" value = {{description}} placeholder="Description"/><br>
-    <b>Time:</b> <input type="time" [(ngModel)]="time" atp-time-picker value="20:55"/><br>
+    <b>Time:</b> <input type="datetime-local" [(ngModel)]="time" value="20:55"/><br>
      <button class="bt n btn-primary" (click)="addTodo()">Submit</button>
 </div>
